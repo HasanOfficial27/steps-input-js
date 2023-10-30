@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="wrapper">
+        <div class="step_con">
+          <div class="step">
+            <h2>1</h2>
+            <div class="step_info">
+              <span>step 1</span>
+              <h4>your info</h4>
+            </div>
+          </div>
+          <div class="step">
+            <h2>2</h2>
+            <div class="step_info">
+              <span>step 2</span>
+              <h4>select plan</h4>
+            </div>
+          </div>
+          <div class="step">
+            <h2>3</h2>
+            <div class="step_info">
+              <span>step 3</span>
+              <h4>add-ons</h4>
+            </div>
+          </div>
+          <div class="step">
+            <h2>4</h2>
+            <div class="step_info">
+              <span>step 4</span>
+              <h4>summary</h4>
+            </div>
+          </div>
+        </div>
+        <div class="step_content_con">
+          <div class="steps">
+            <h2>Personal info</h2>
+            <p>Please provide your name, email address, and phone number.</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="e.g. Stephen King" />
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+            <label for="number">Phone number</label>
+            <input type="text" id="number" placeholder="e.g. +12345678900" />
+          </div>
+          <div class="steps">
+            <h2>Select your plan</h2>
+            <p>You have the option of monthly or year billing.</p>
+
+            <div class="selects_plan">
+              <div class="icon_con">
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <div class="plan_content">
+                <h3>Arcade</h3>
+                <p id="plan1">$9/mo</p>
+              </div>
+            </div>
+            <div class="selects_plan">
+              <div class="icon_con">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+              <div class="plan_content">
+                <h3>Advanced</h3>
+                <p id="plan2">$12/mo</p>
+              </div>
+            </div>
+            <div class="selects_plan">
+              <div class="icon_con">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="plan_content">
+                <h3>Pro</h3>
+                <p id="plan3">$15/mo</p>
+              </div>
+            </div>
+            <div class="billing_time_con">
+              <h3 id="monthly" class="active">monthly</h3>
+              <div id="toggle_btn" class="toggle_btn"><span></span></div>
+              <h3 id="yearly">yearly</h3>
+            </div>
+          </div>
+          <!------>
+          <!------>
+          <div class="steps">
+            <h2>Add-Ones</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius?
+            </p>
+            <div class="select_adds">
+              <h3>Support</h3>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="select_adds">
+              <h3>Live Support</h3>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="select_adds">
+              <h3>Contact</h3>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <!------>
+          <!------>
+          <div class="steps">
+            <h2>summary</h2>
+            <label for="s_name">Name</label>
+            <input type="text" name="s_name" id="s_name" disabled />
+            <label for="s_email">Email Address</label>
+            <input type="text" name="s_email" id="s_email" disabled />
+            <label for="s_number">Phone Number</label>
+            <input type="text" name="s_number" id="s_number" disabled />
+            <div class="s_plan">
+              <i class="fa-solid fa-circle-check"></i>
+              <h3 id="s_plan"></h3>
+            </div>
+
+            <div id="s_adds"></div>
+            <div id="demo6"></div>
+          </div>
+          <div class="steps_btn">
+            <button onclick="check_input()" id="next">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="thanks_con" class="thanks_con">
+      <i class="fa-solid fa-circle-check"></i>
+      <h1>Thanks for Subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span id="confirm_email">ash@loremcompany.com</span>. Please open it and
+        confirm your subscription.
+      </p>
+      <button id="dismiss_btn">Dismiss message</button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/d39c375e60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
