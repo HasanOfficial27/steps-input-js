@@ -8,11 +8,6 @@ body {
   box-sizing: border-box;
   background-color: rgba(183, 211, 255, 0.349);
 }
-@media (max-width: 599px) {
-  body {
-    background-color: white;
-  }
-}
 .container {
   width: 100%;
   max-width: 680px;
@@ -24,15 +19,6 @@ body {
   background-color: white;
   border-radius: 10px;
 }
-@media (max-width: 599px) {
-  .container {
-    width: 100%;
-    margin: 0;
-    top: 0;
-    left: 0;
-    transform: translate(-0%, -0%);
-  }
-}
 .wrapper {
   width: 100%;
   display: flex;
@@ -40,17 +26,6 @@ body {
   padding: 20px;
   padding-right: 0;
   box-sizing: border-box;
-}
-@media (max-width: 599px) {
-  .wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    padding-bottom: 10px;
-    position: relative;
-    background-color: rgba(183, 211, 255, 0.349);
-  }
 }
 .step_con {
   display: block;
@@ -62,18 +37,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 599px) {
-  .step_con {
-    display: flex;
-    flex-direction: row;
-    width: initial;
-    height: 80px;
-    border-radius: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-}
 .step_con::after {
   content: "";
   width: 120px;
@@ -84,23 +47,12 @@ body {
   background-color: rgb(209, 178, 23);
   border-radius: 50%;
 }
-@media (max-width: 599px){
-  .step_con::after{
-    top: 20%;
-    left: -35px;
-  }
-}
 .step {
   display: flex;
   flex-direction: row;
   justify-content: baseline;
   gap: 10px;
   margin: 25px 0;
-}
-@media (max-width: 599px) {
-  .step {
-    margin-top: -40px;
-  }
 }
 .step h2 {
   display: flex;
@@ -138,28 +90,13 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
-@media (max-width: 599px) {
-  .step .step_info {
-    display: none;
-  }
-}
-.step_content_con {
+.step_content_and_btn{
   display: flex;
   flex-direction: column;
-  width: 48%;
-  margin: 10px auto;
-  box-sizing: border-box;
 }
-@media (max-width: 599px) {
-  .step_content_con {
-    width: 90%;
-    background-color: white;
-    padding: 25px;
-    box-sizing: border-box;
-    margin-top: -65px;
-    z-index: 2;
-    border-radius: 10px;
-  }
+.step_content_con {
+  width: 85%;
+  margin: 10px auto;
 }
 .steps {
   display: none;
@@ -205,12 +142,14 @@ body {
   color: rgb(115, 115, 115);
 }
 .steps_btn {
-  display: block;
+  width: 87%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
 }
 .steps_btn button {
-  position: absolute;
-  top: 74vh;
-  left: 82%;
   width: 70px;
   padding: 7px 0;
   border: none;
@@ -223,17 +162,9 @@ body {
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
 }
-@media (max-width: 599px) {
-  .steps_btn {
-    width: 100%;
-    z-index: 4;
-  }
-  .steps_btn button {
-    top: 91vh;
-    left: 81%;
-  }
-}
+
 .selects_plan {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

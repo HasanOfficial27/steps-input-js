@@ -96,8 +96,10 @@ function next() {
   if (i < steps.length) {
     steps[i].style.display = "block";
     steps[i - 1].style.display = "none";
+    steps[i + 1].style.display = "none";
     step[i].classList.add("active");
     step[i - 1].classList.remove("active");
+    step[i + 1].classList.remove("active");
     /***toggle btn year month***/
     toggle_btn.addEventListener("click", () => {
       toggle_btn.classList.toggle("active");
